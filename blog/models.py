@@ -8,4 +8,6 @@ class posts(models.Model):
   bodytext = models.TextField()
   timestamp = models.DateTimeField()
 
+  def __unicode__(self):
+    return self.title
   
